@@ -1,5 +1,3 @@
-// estructurasDeControl.js
-
 // Ejercicio 1: Condicionales if-else
 function verificarParidad(numero) {
     if (numero % 2 === 0) {
@@ -122,3 +120,17 @@ saltarCinco();
 console.log(obtenerDiaSemana(3));
 console.log(esVocal('e'));
 evaluarNumeros(1, -2, 3);
+
+// Exportar todas las funciones (solo si usas un entorno compatible)
+module.exports = {
+    verificarParidad,
+    clasificarEdad,
+    cuentaRegresiva,
+    repetirMensaje,
+    imprimirPares,
+    detenerEnSeis,
+    saltarCinco,
+    obtenerDiaSemana,
+    esVocal,
+    evaluarNumeros,
+};
